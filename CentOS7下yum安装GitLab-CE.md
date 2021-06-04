@@ -16,8 +16,8 @@ systemctl disabled firewalld
 
 ```
 yum install curl openssh-server postfix cronie
-service postfix start
-chkconfig postfix on
+systemctl postfix start
+systemctl enable postfix.service
 ```
 
 > 注意: gitlab-ce 镜像仅支持 x86-64 架构
